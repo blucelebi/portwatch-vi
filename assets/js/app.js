@@ -188,7 +188,35 @@ function startCountdown(exe) {
   };
   tick();
   setInterval(tick, 1000);
+    // --- DEBUT DU CODE POUR LE 2EME COMPTE A REBOURS ---
+  const playableEl = $('#playable-countdown');
+  const data = state.data;
+  if (playableEl && data && data.playableDeadline) {
+    const targetDate = Date.parse(data.playableDeadline.targetAt);
+    
+    if (Number.isFinite(targetDate)) {
+      const tickPlayable = () => {
+        let diff = targetDate - Date.now();
+        if (diff <= 0) {
+          playableEl.textContent = "Time's up!";
+          playableEl.style.color = "#ff4500";
+          return;
+        }
+        const d = Math.floor(diff / 864e5);
+        const h = Math.floor((diff % 864e5) / 36e5);
+        const m = Math.floor((diff % 36e5) / 6e4);
+        const s = Math.floor((diff % 6e4) / 1e3);
+        playableEl.textContent = `${pad(d)}d ${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+      };
+      tickPlayable();
+      setInterval(tickPlayable, 1000);
+    } else {
+      playableEl.textContent = "No date set";
+    }
+  }
+  // --- FIN DU CODE POUR LE 2EME COMPTE A REBOURS ---
 }
+
 
 /* ---------- Overall ---------- */
 function renderOverall(data) {

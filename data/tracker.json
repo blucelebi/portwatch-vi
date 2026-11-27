@@ -14,6 +14,9 @@
     "note": "Cyberleek posted on Monday, Nov 23 at 15:36 CET (14:36 UTC) that the missing executable is out, about 2.5 hours before its own 18:00 CET deadline. XDA Developers, DSOGaming and other outlets have since reported the release, but none has shown the file is genuine and Rockstar hasn't confirmed the leak. Several projects now run the game's own code, and two report reaching its menus.",
     "source": "https://www.xda-developers.com/gta-6-xbox-executable-leaked-opening-door-for-pc-recompilation-projects-begin-testing/"
   },
+    "playableDeadline": {
+    "targetAt": "2027-01-01T00:00:00Z"
+  },
   "news": [
     {
       "id": "2026-11-27-belobug-dmca",
