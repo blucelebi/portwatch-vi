@@ -2,6 +2,6 @@
   "show": true,
   "name": "4lwayz",
   "avatar": "assets/img/4lwayz-2.jpg",
-  "text": "**Experienced devs wanted: let's help DexNom make a real build.**\n\nWhile most builds chase FPS, DexNom is going after the hard part: native resolution, full ray tracing (already working, about 1 fps for now) and memory use that fits normal PCs.\n\nHe needs people who know GPU memory, CPU-GPU transfers, texture streaming, D3D12 or Rust. Testers and profilers are welcome too. DM him:\nhttps://x.com/DexNom_/status/2125947738420551767\nhttps://redd.it/1y628de",
-  "updated": "2026-11-26T14:28:30Z"
+  "text": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
+  "updated": "2026-11-27T14:13:39Z"
 }
